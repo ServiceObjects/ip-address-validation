@@ -32,7 +32,7 @@ using ip_address_validation_dot_net.REST;
 GetGeoLocationByIPV4Client.GetGeoLocationByIPV4Input getGeoLocationInput = new(
     IPAddress: "72.205.70.231",
     LicenseKey: licenseKey,
-    IsLive: isLive,
+    IsLive: true,
     TimeoutSeconds: 15
 );
 

@@ -31,8 +31,9 @@ Returns geographic location, proxy, host name and US region information for a gi
 
 // 3 Call the service
  string IPAddress = "72.205.70.231";
+ string LicenseKey = "YOUR LICENSE KEY";
 
- IP4 response = ipav4.GetGeoLocationByIPV4(IPAddress, licenseKey).Result;
+ IP4 response = ipav4.GetGeoLocationByIPV4(IPAddress, LicenseKey).Result;
 
 // 4. Inspect results.
 if (response.Error is null)

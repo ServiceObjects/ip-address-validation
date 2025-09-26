@@ -20,17 +20,19 @@ Returns geographic location, proxy, host name and US region information for a gi
 # 1. Build the input
 #
 #  Required fields:
-#               LicenseKey
-#               IsLive
+#               license_key
+#               is_live
 # 
 # Optional:
-#       IPAddress
-#       TimeoutSeconds (default: 15)
+#       ip_address
+#       timeout_seconds (default: 15)
 
 from get_geo_location_by_ipv4_rest import get_geo_location_by_ipv4
 
 ip_address = "72.205.70.231"
 timeout_seconds = 15
+is_live = True
+license_key = "YOUR LICENSE KEY"
 
 # 2. Call the method.
  response = get_geo_location_by_ipv4(ip_address, license_key, is_live, timeout_seconds)

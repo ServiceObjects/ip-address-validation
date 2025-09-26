@@ -20,17 +20,19 @@ Returns geographic location, proxy, host name and US region information for a gi
 // 1. Build the input
 //
 //  Required fields:
-//               LicenseKey
-//               IsLive
+//               licenseKey
+//               isLive
 // 
 // Optional:
-//       IPAddress
-//       TimeoutSeconds (default: 15)
+//       ipAddress
+//       timeoutSeconds (default: 15)
 
 import { GetGeoLocationByIPV4Client } from "../ip-address-validation-nodejs/REST/get_geo_location_by_ipv4_rest.js";
 
 const ipAddress = "72.205.70.231";
 const timeoutSeconds = 15;
+const isLive = false;
+const licenseKey = "YOUR LICENSE KEY";
 
 // 2. Call the sync Invoke() method.
 const response = await GetGeoLocationByIPV4Client.invoke(ipAddress, licenseKey, isLive, timeoutSeconds);

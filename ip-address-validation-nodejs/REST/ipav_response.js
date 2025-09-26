@@ -1,8 +1,8 @@
 export class Error {
     constructor(data = {}) {
-        this.Desc = data.Desc || null;
-        this.Number = data.Number || null;
-        this.Location = data.Location || null;
+        this.Desc = data.Desc;
+        this.Number = data.Number;
+        this.Location = data.Location;
     }
 
     toString() {
@@ -12,30 +12,30 @@ export class Error {
 
 export class IPAVResponse {
     constructor(data = {}) {
-        this.IPAddress = data.IPAddress || null;
-        this.LicenseKey = data.LicenseKey || null;
+        this.IPAddress = data.IPAddress;
+        this.LicenseKey = data.LicenseKey;
         this.Certainty = data.Certainty || 0;
-        this.City = data.City || null;
-        this.Region = data.Region || null;
-        this.Country = data.Country || null;
-        this.CountryISO3 = data.CountryISO3 || null;
-        this.CountryISO2 = data.CountryISO2 || null;
-        this.PostalCode = data.PostalCode || null;
-        this.MetroCode = data.MetroCode || null;
-        this.DMA = data.DMA || null;
-        this.StateFIPS = data.StateFIPS || null;
-        this.CountyFIPS = data.CountyFIPS || null;
-        this.Latitude = data.Latitude || null;
-        this.Longitude = data.Longitude || null;
-        this.IsProxy = data.IsProxy || null;
-        this.ProxyType = data.ProxyType || null;
-        this.PossibleMobileDevice = data.PossibleMobileDevice || null;
-        this.ISP = data.ISP || null;
-        this.NetblockOwner = data.NetblockOwner || null;
-        this.HostNames = data.HostNames || null;
-        this.IPNoteCodes = data.IPNoteCodes || null;
-        this.IPNotes = data.IPNotes || null;
-        this.Debug = data.Debug || null;
+        this.City = data.City;
+        this.Region = data.Region;
+        this.Country = data.Country;
+        this.CountryISO3 = data.CountryISO3;
+        this.CountryISO2 = data.CountryISO2;
+        this.PostalCode = data.PostalCode;
+        this.MetroCode = data.MetroCode;
+        this.DMA = data.DMA;
+        this.StateFIPS = data.StateFIPS;
+        this.CountyFIPS = data.CountyFIPS;
+        this.Latitude = data.Latitude;
+        this.Longitude = data.Longitude;
+        this.IsProxy = data.IsProxy;
+        this.ProxyType = data.ProxyType;
+        this.PossibleMobileDevice = data.PossibleMobileDevice;
+        this.ISP = data.ISP;
+        this.NetblockOwner = data.NetblockOwner;
+        this.HostNames = data.HostNames;
+        this.IPNoteCodes = data.IPNoteCodes;
+        this.IPNotes = data.IPNotes;
+        this.Debug = data.Debug;
         this.Error = data.Error ? new Error(data.Error) : null;
     }
 
